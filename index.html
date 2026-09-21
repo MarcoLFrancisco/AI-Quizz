@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#143e38">
+  <meta name="description" content="Learn the basics of AI and GPT with eight beginner-friendly questions inspired by photography.">
+  <title>AI in Focus | Photography Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="questions.js" defer></script>
+  <script src="quiz.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="brand">
+      <span class="brand-icon" aria-hidden="true">
+        <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+          <path d="M8 5l1.5-2h5L16 5h3a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h3z"/>
+          <circle cx="12" cy="13" r="4"/>
+          <path d="M17.5 8h1"/>
+        </svg>
+      </span>
+      <div>AI in Focus<small>A little learning. A fresh perspective.</small></div>
+    </header>
+
+    <main id="app" class="card" aria-label="AI and GPT photography quiz">
+      <p class="eyebrow">For curious photographers</p>
+      <h1 tabindex="-1" data-heading>Great shots.<br>Smarter prompts.</h1>
+      <p class="lead muted">
+        How much do you know about AI and GPT? Explore the basics through
+        everyday photography situations. No tech expertise needed.
+      </p>
+
+      <div class="stats" role="group" aria-label="Quiz overview">
+        <div><strong>8</strong><span>Questions</span></div>
+        <div><strong>~3 min</strong><span>No time limit</span></div>
+        <div><strong>2</strong><span>Multi-answer questions</span></div>
+      </div>
+
+      <p id="scoring-note" class="note">
+        Each question is worth 1 point. Six questions have one correct answer.
+        For the two multi-answer questions, select exactly two answers;
+        both must be correct to earn the point. Your final score is out of 8.
+      </p>
+
+      <button id="start" class="primary" type="button" aria-describedby="scoring-note" disabled>
+        Let’s get focused →
+      </button>
+      <p id="initialization-status" class="muted" role="status">
+        The Start button becomes available when the quiz finishes loading.
+        If it stays unavailable, check that JavaScript is enabled and all quiz files are present, then reload.
+      </p>
+      <noscript><p>Please enable JavaScript in your browser to take the quiz.</p></noscript>
+    </main>
+
+    <footer class="footer">Just you and the quiz. No sign-in. No timer. No pressure.</footer>
+  </div>
+</body>
+</html>
