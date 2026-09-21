@@ -20,3 +20,14 @@ Files in the approved proposal:
 - questions.js
 
 Bumblebee has not run automated tests or verified runtime behavior for this change.
+
+
+<!-- bumblebee-pr-6 -->
+### Merged change: Implement quiz interaction, exact-match scoring, review and restart
+
+Merged pull request #6: https://github.com/MarcoLFrancisco/AI-Quizz/pull/6
+
+Files in the approved proposal:
+- quiz.js
+
+Bumblebee has not run automated tests or verified runtime behavior for this change.
