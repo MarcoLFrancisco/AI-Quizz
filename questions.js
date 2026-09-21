@@ -5,7 +5,7 @@
 // The controller awards one point only when the selected set matches fully.
 window.quizQuestions = [
   {
-    title: "What does GPT stand for?",
+    title: "O que significa GPT?",
     options: [
       "Global Photography Tool",
       "Generative Pre-trained Transformer",
@@ -13,83 +13,83 @@ window.quizQuestions = [
       "Guided Photo Training"
     ],
     correct: [1],
-    explanation: "GPT stands for Generative Pre-trained Transformer. It is a type of AI model that learns patterns during training and uses them to generate responses."
+    explanation: "GPT significa Generative Pre-trained Transformer. É um tipo de modelo de IA que aprende padrões durante o treinamento e os utiliza para gerar respostas."
   },
   {
-    title: "Which description best fits an AI assistant powered by GPT?",
+    title: "Qual descrição melhor representa um assistente de IA baseado em GPT?",
     options: [
-      "A person answering messages behind the scenes",
-      "A camera setting that controls exposure",
-      "Software that generates responses based on learned patterns and your input",
-      "A database that always returns verified facts"
+      "Uma pessoa respondendo às mensagens nos bastidores",
+      "Uma configuração da câmera que controla a exposição",
+      "Um software que gera respostas com base em padrões aprendidos e nas informações fornecidas por você",
+      "Um banco de dados que sempre retorna fatos verificados"
     ],
     correct: [2],
-    explanation: "A GPT-powered assistant generates responses using learned patterns and the context you provide. It is not a human, and its answers are not automatically verified."
+    explanation: "Um assistente baseado em GPT gera respostas usando padrões aprendidos e o contexto fornecido por você. Ele não é humano e suas respostas não são verificadas automaticamente."
   },
   {
-    title: "You want an Instagram caption for a landscape photo. What is a prompt?",
+    title: "Você quer uma legenda para uma foto de paisagem no Instagram. O que é um prompt?",
     options: [
-      "The instruction or message you give the AI",
-      "The number of pixels in your photo",
-      "A filter automatically applied to your image",
-      "The speed of your camera's shutter"
+      "A instrução ou mensagem que você fornece à IA",
+      "O número de pixels da sua foto",
+      "Um filtro aplicado automaticamente à imagem",
+      "A velocidade do obturador da câmera"
     ],
     correct: [0],
-    explanation: "A prompt is your input to the AI. For example: Write a short, peaceful caption for a misty mountain sunrise. Avoid hashtags."
+    explanation: "Um prompt é a informação que você fornece à IA. Por exemplo: Escreva uma legenda curta e tranquila para o nascer do sol em uma montanha com neblina. Não use hashtags."
   },
   {
-    title: "Which TWO tasks could a GPT assistant help with when preparing a portrait shoot?",
+    title: "Em quais DUAS tarefas um assistente GPT poderia ajudar na preparação de uma sessão de retratos?",
     options: [
-      "Suggest a shot list based on your creative brief",
-      "Guarantee perfect weather at your location",
-      "Brainstorm poses and lighting ideas",
-      "Physically adjust your lights without connected equipment"
+      "Sugerir uma lista de fotos com base no briefing criativo",
+      "Garantir condições climáticas perfeitas no local",
+      "Sugerir poses e ideias de iluminação",
+      "Ajustar fisicamente as luzes sem equipamentos conectados"
     ],
     correct: [0, 2],
-    explanation: "GPT can help brainstorm shot lists, poses, and lighting approaches. It cannot guarantee the weather or move physical equipment on its own. Treat its suggestions as a starting point to adapt and test."
+    explanation: "O GPT pode ajudar a criar listas de fotos, poses e abordagens de iluminação. Ele não pode garantir o clima nem mover equipamentos físicos por conta própria. Use as sugestões como ponto de partida para adaptar e testar."
   },
   {
-    title: "Which prompt gives an AI assistant the clearest brief for a photo caption?",
+    title: "Qual prompt fornece o briefing mais claro a um assistente de IA para criar uma legenda de foto?",
     options: [
-      "Write something.",
-      "Photo caption please.",
-      "Make it good.",
-      "Write a warm caption under 20 words for a beach wedding photo, with no hashtags."
+      "Escreva alguma coisa.",
+      "Uma legenda para a foto, por favor.",
+      "Faça algo bom.",
+      "Escreva uma legenda acolhedora, com menos de 20 palavras e sem hashtags, para uma foto de casamento na praia."
     ],
     correct: [3],
-    explanation: "Specific context, tone, and constraints help the AI tailor its response. Think of a good prompt as a clear creative brief, then check whether the result meets it."
+    explanation: "Contexto, tom e restrições específicos ajudam a IA a adaptar a resposta. Pense em um bom prompt como um briefing criativo claro e depois confira se o resultado atende ao pedido."
   },
   {
-    title: "GPT recommends a camera setting that sounds unusual. What should you do?",
+    title: "O GPT recomenda uma configuração de câmera que parece incomum. O que você deve fazer?",
     options: [
-      "Trust it because AI never makes mistakes",
-      "Check your camera's manual and test the suggestion",
-      "Assume the same setting works for every photo",
-      "Delete your existing camera presets immediately"
+      "Confiar, pois a IA nunca comete erros",
+      "Consultar o manual da câmera e testar a sugestão",
+      "Presumir que a mesma configuração funciona para todas as fotos",
+      "Excluir imediatamente as predefinições existentes na câmera"
     ],
     correct: [1],
-    explanation: "AI can make mistakes or miss important context. Check reliable sources and test suggestions, especially when the camera model or shooting conditions matter."
+    explanation: "A IA pode cometer erros ou ignorar informações importantes do contexto. Consulte fontes confiáveis e teste as sugestões, especialmente quando o modelo da câmera ou as condições da foto forem relevantes."
   },
   {
-    title: "Before uploading a client's portrait to an AI service, which TWO steps are responsible?",
+    title: "Antes de enviar o retrato de um cliente a um serviço de IA, quais são as DUAS atitudes responsáveis?",
     options: [
-      "Check that you have appropriate permission to share it",
-      "Assume every AI service keeps uploads completely private",
-      "Review the service's privacy policy and data controls",
-      "Include the client's address even when it is unnecessary"
+      "Confirmar que você tem a permissão adequada para compartilhar a foto",
+      "Presumir que todos os serviços de IA mantêm os arquivos enviados totalmente privados",
+      "Analisar a política de privacidade e os controles de dados do serviço",
+      "Incluir o endereço do cliente mesmo quando for desnecessário"
     ],
     correct: [0, 2],
-    explanation: "Make sure you have appropriate permission and understand how the service handles uploads, including storage and possible training use. Avoid sharing unnecessary personal information."
+    explanation: "Certifique-se de ter a permissão adequada e entenda como o serviço trata os arquivos enviados, incluindo o armazenamento e o possível uso em treinamento. Evite compartilhar informações pessoais desnecessárias."
   },
   {
-    title: "Can every GPT-powered app understand an uploaded photograph?",
+    title: "Todos os aplicativos baseados em GPT conseguem compreender uma fotografia enviada?",
     options: [
-      "Yes, every GPT app automatically supports images",
-      "Yes, but only if the photo is black and white",
-      "No, it depends on the model's capabilities and the app's features",
-      "No, AI can never work with images"
+      "Sim, todos os aplicativos GPT aceitam imagens automaticamente",
+      "Sim, mas somente se a foto estiver em preto e branco",
+      "Não, isso depende dos recursos do modelo e das funcionalidades do aplicativo",
+      "Não, a IA nunca pode trabalhar com imagens"
     ],
     correct: [2],
-    explanation: "Some models support image input, while others are text-only. The app must also provide image-upload support. Even image-capable models can misinterpret visual details."
+    explanation: "Alguns modelos aceitam imagens, enquanto outros trabalham apenas com texto. O aplicativo também precisa oferecer suporte ao envio de imagens. Mesmo modelos capazes de analisar imagens podem interpretar detalhes visuais incorretamente."
   }
 ];
