@@ -60,7 +60,7 @@ fieldset { min-width: 0; padding: 0; margin: 0; border: 0; }
 .options { display: grid; gap: 12px; }
 .option { display: flex; align-items: flex-start; gap: 13px; min-height: 64px; padding: 17px; border: 2px solid var(--border); border-radius: 14px; cursor: pointer; transition: border-color .15s, background .15s; }
 .option:hover:not(.locked) { border-color: #8ca99b; }
-.option:has(input:checked) { border-color: var(--primary); background: #f0f7f2; }
+.option:not(.locked):has(input:checked) { border-color: var(--primary); background: #f0f7f2; }
 .option:has(input:focus-visible) { outline: 3px solid #945900; outline-offset: 3px; }
 .option input { flex: 0 0 auto; width: 20px; height: 20px; margin: 3px 0 0; accent-color: var(--primary); }
 .option-text { flex: 1; min-width: 0; font-size: 15px; }
