@@ -7,7 +7,7 @@
   const questions = window.quizQuestions;
   if (!app || !start || !status) return;
   if (!Array.isArray(questions) || questions.length !== 8) {
-    status.textContent = "Os dados das perguntas não estão disponíveis. Verifique o arquivo questions.js e recarregue a página.";
+    status.textContent = "Os dados das perguntas não estão disponíveis. Verifique o ficheiro questions.js e recarregue a página.";
     return;
   }
 
@@ -37,7 +37,7 @@
     app.innerHTML = `
       <div class="progress-meta">
         <span>Pergunta ${index + 1} de ${questions.length}</span>
-        <span id="points">${score()} ${score() === 1 ? "ponto conquistado" : "pontos conquistados"}</span>
+        <span id="points">${score()} ${score() === 1 ? "ponto obtido" : "pontos obtidos"}</span>
       </div>
       <progress value="${index}" max="${questions.length}" aria-label="Perguntas concluídas"></progress>
       <span class="badge ${multiple ? "multiple" : ""}">${multiple ? "Várias respostas · Escolha 2" : "Resposta única"}</span>
@@ -56,7 +56,7 @@
         <p id="selection-count" class="instruction muted" aria-live="polite" ${multiple ? "" : "hidden"}>0 de 2 respostas selecionadas</p>
         <p id="error" class="error" role="alert"></p>
         <div id="feedback" hidden tabindex="-1" role="region" aria-labelledby="feedback-title"></div>
-        <div class="actions"><button class="primary" type="submit">Conferir resposta</button></div>
+        <div class="actions"><button class="primary" type="submit">Verificar resposta</button></div>
       </form>`;
 
     const form = app.querySelector("form");
@@ -88,17 +88,17 @@
         tag.className = "answer-tag";
         tag.textContent = isAnswer
           ? `✓ Resposta correta · ${input.checked ? "Selecionada" : "Não selecionada"}`
-          : "✕ Sua seleção · Incorreta";
+          : "✕ A sua seleção · Incorreta";
         label.querySelector(".option-text").appendChild(tag);
       });
-      app.querySelector("#points").textContent = `${score()} ${score() === 1 ? "ponto conquistado" : "pontos conquistados"}`;
+      app.querySelector("#points").textContent = `${score()} ${score() === 1 ? "ponto obtido" : "pontos obtidos"}`;
       app.querySelector("progress").value = index + 1;
       const feedback = app.querySelector("#feedback");
       feedback.className = `feedback ${correct ? "" : "wrong"}`;
-      feedback.innerHTML = `<strong id="feedback-title">${correct ? "✓ Muito bem! +1 ponto" : "Não foi dessa vez. Veja a explicação."}</strong><p>${escape(question.explanation)}</p>`;
+      feedback.innerHTML = `<strong id="feedback-title">${correct ? "✓ Muito bem! +1 ponto" : "Não foi desta vez. Consulte a explicação."}</strong><p>${escape(question.explanation)}</p>`;
       feedback.hidden = false;
       button.type = "button";
-      button.textContent = index === questions.length - 1 ? "Ver minha pontuação →" : "Próxima pergunta →";
+      button.textContent = index === questions.length - 1 ? "Ver a minha pontuação →" : "Pergunta seguinte →";
       button.addEventListener("click", () => {
         index += 1;
         if (index < questions.length) renderQuestion();
@@ -112,7 +112,7 @@
   function renderResults() {
     const total = score();
     const percentage = Math.round(total / questions.length * 100);
-    const title = total === questions.length ? "Resultado perfeito!" : percentage >= 75 ? "Mandou muito bem!" : "Está entrando em foco!";
+    const title = total === questions.length ? "Resultado perfeito!" : percentage >= 75 ? "Muito bom!" : "Está a entrar em foco!";
     app.innerHTML = `
       <div class="result-top">
         <p class="eyebrow">Quiz concluído</p>
@@ -120,15 +120,15 @@
           <div class="score-center"><strong>${percentage}%</strong><span>Pontuação final</span></div>
         </div>
         <h2 tabindex="-1" data-heading>${title}</h2>
-        <p>Você acertou <strong>${total} de ${questions.length}</strong> (${percentage}%).</p>
-        <p class="muted">Revise suas respostas abaixo e tente novamente. Continue verificando sugestões importantes da IA antes de utilizá-las.</p>
+        <p>Acertou em <strong>${total} de ${questions.length}</strong> (${percentage}%).</p>
+        <p class="muted">Reveja as suas respostas abaixo e tente novamente. Continue a verificar sugestões importantes da IA antes de as utilizar.</p>
       </div>
       <div class="review">${questions.map((question, questionIndex) => {
         const response = responses[questionIndex];
         const answerText = (indices) => indices.map((answer) => escape(question.options[answer])).join(" • ");
         return `<details>
           <summary><span class="review-status ${response.correct ? "" : "wrong"}">${response.correct ? "✓ Correta" : "✕ Incorreta"}</span> · ${questionIndex + 1}. ${escape(question.title)}</summary>
-          <p><strong>Sua resposta:</strong> ${answerText(response.selected)}</p>
+          <p><strong>A sua resposta:</strong> ${answerText(response.selected)}</p>
           <p><strong>Resposta correta:</strong> ${answerText(question.correct)}</p>
           <p class="muted">${escape(question.explanation)}</p>
         </details>`;
