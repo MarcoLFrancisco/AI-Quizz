@@ -31,3 +31,14 @@ Files in the approved proposal:
 - quiz.js
 
 Bumblebee has not run automated tests or verified runtime behavior for this change.
+
+
+<!-- bumblebee-pr-8 -->
+### Merged change: Fix wrong answers retaining green selection colors after submission
+
+Merged pull request #8: https://github.com/MarcoLFrancisco/AI-Quizz/pull/8
+
+Files in the approved proposal:
+- styles.css
+
+Bumblebee has not run automated tests or verified runtime behavior for this change.
