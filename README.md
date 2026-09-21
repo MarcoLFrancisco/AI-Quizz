@@ -133,3 +133,14 @@ Files in the approved proposal:
 - styles.css
 
 Bumblebee has not run automated tests or verified runtime behavior for this change.
+
+
+<!-- bumblebee-pr-10 -->
+### Merged change: Document local quiz setup, behavior and manual validation
+
+Merged pull request #10: https://github.com/MarcoLFrancisco/AI-Quizz/pull/10
+
+Files in the approved proposal:
+- README.md
+
+Bumblebee has not run automated tests or verified runtime behavior for this change.
